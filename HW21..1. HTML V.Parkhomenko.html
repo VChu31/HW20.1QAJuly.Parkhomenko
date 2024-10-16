@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Валентина Пархоменко</title>
     <style>
+        H1 {color: red;
+color: #800080; 
+    font-size: 300%; 
+    font-family: Caviat;}
+    P {padding-left: 20px;}
+     h1:hover {
+            color: #FFD700; /* Жовтий колір при наведенні */
+        }
+
+H2 {color: #FF1493;
+ font-size: 200%;
+font-family: Pacifico;}
+P {padding-left: 20px;}
+
+H3 {color: #2F4F4F;
+font-family: Calibri;
+font-size: 150%;
+}
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -28,12 +47,23 @@
             margin-bottom: 40px;
         }
         .hobbies img {
-            width:320px;
-            height: 240px;
+            width:200px;
+            height: 200px;
             margin: 10px;
             border-radius: 10px;
         }
+
+        .hobbies {
+            text-align: center;
+        }
         .hobbies div {
+            display: inline-block;
+        }
+        .hobbies .frame {
+            border: 10px solid yellow;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
             display: inline-block;
         }
         .contact-info {
@@ -48,7 +78,12 @@
     table {
             margin-bottom: 20px;
         }
-        
+        div {text-align: left;}
+
+        #contact-info h2 {
+            color: #0000FF; /* Також змінюємо колір заголовка контактної інформації */
+        }
+        a:visited{color:red;}
     </style>
 </head>
 <body>
@@ -60,56 +95,58 @@
 
         <section class="bio">
             <h2><em>Інформація про Валентину</em></h2>
-            <p><small>Валентина Пархоменко — завжди прагне до нових знань і пригод. Навчається у <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiSy8GfsomJAxV0EAYAHfbbAk8YABAAGgJ3cw&co=1&ase=2&gclid=CjwKCAjwvKi4BhABEiwAH2gcw1pkGiY6PrQWoY_Q5XDeEoJRwgclZnRHOQYu6oYFe6jsveotbFtmkxoC6_sQAvD_BwE&sig=AOD64_0bBdfgwpJbff0ME8c6WBII56T2nQ&q&nis=4&adurl&ved=2ahUKEwi227mfsomJAxXlBNsEHcxBMb0Q0Qx6BAgFEAE" target="_blank">IT Hillel School</a> на QA Manual. Вона захоплюється хайкінгом, відвідує тренажерний зал, любить лижі, читати і подорожувати. Валентина обожнює собак, а особливо французьких бульдогів.</small></p>
+            <p style="font-size: 150%; font-family: monospace; color: #191970">Valentina Parkhomenko</p>
+            <p><strong>— завжди прагне до нових знань і пригод. Навчається у <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiSy8GfsomJAxV0EAYAHfbbAk8YABAAGgJ3cw&co=1&ase=2&gclid=CjwKCAjwvKi4BhABEiwAH2gcw1pkGiY6PrQWoY_Q5XDeEoJRwgclZnRHOQYu6oYFe6jsveotbFtmkxoC6_sQAvD_BwE&sig=AOD64_0bBdfgwpJbff0ME8c6WBII56T2nQ&q&nis=4&adurl&ved=2ahUKEwi227mfsomJAxXlBNsEHcxBMb0Q0Qx6BAgFEAE" target="_blank">IT Hillel School</a> на QA Manual. Вона захоплюється хайкінгом, відвідує тренажерний зал, любить лижі, читати і подорожувати. Валентина обожнює собак, а особливо французьких бульдогів.</strong></p>
         </section>
 
         <section class="hobbies">
             <h2>Хоббі</h2>
-            <div>
+             <div class="frame">
             <ul>
-           <li><h3>Хайкінг</h3></li>
-                <img src="Images/Hiking.jpg" alt="Хайкінг">
+           <li><h3><p style="font-size: 120%; font-family: monospace; color: green">Хайкінг</p></h3></li>
+                <img src="images/hiking.jpg" alt="Хайкінг">
                 </ul>
             </div>
-            <div>
+             <div class="frame">
             <ul type="square">
-               <li><h3>Тренажерна зала</h3></li>
-                <img src="Images/Gym.jpg" alt="Тренажерна зала">
+               <li><h3><p style="font-size: 120%; font-family: monospace; color: red">Тренажерна зала</p></h3></li>
+                <img src="images/gym.jpg" alt="Тренажерна зала">
                 </ul>
             </div>
-            <div>
+             <div class="frame">
             <ul>
-                <li><h3>Читання</h3></li>
-                <img src="Images/Reading.jpg" alt="Читання">
+                <li><h3><p style="font-size: 120%; font-family: monospace; color: grey">Читання</p></h3></li>
+                <img src="images/reading.jpg" alt="Читання">
                  </ul>
             </div>
-            <div>
+             <div class="frame">
              <ul type="square">
-                <li><h3>Подорожі</h3></li>
-                <img src="Images/Traveling.jpg" alt="Подорожі">
+                <li><h3><p style="font-size: 120%; font-family: monospace; color: red">Подорожі</p></h3></li>
+                <img src="images/traveling.jpg" alt="Подорожі">
                 </ul>
             </div>
-            <div>
+             <div class="frame">
             <ul>
-                <li><h3>Лижі</h3></li>
-                <img src="Images/Skiing.jpg" alt="Лижі">
+                <li><h3><p style="font-size: 120%; font-family: monospace; color: grey">Лижі</p></h3></li>
+                <img src="images/skiing.jpg" alt="Лижі">
                 </ul>
             </div>
-            <div>
+             <div class="frame">
              <ul type="square">
-                <li><h3>Французький бульдог</h3></li>
-                <img src="Images/Frenchbulldog.jpg" alt="Французький бульдог">
+                <li><h3><p style="font-size: 120%; font-family: monospace; color: green">French Bulldog</p></h3></li>
+                <img src="images/frenchbulldog.jpg" alt="Французький бульдог">
                 </ul>
             </div>
-        </section>
 
+        </section>
+        <section id="contact-info">
         <section class="contact-info">
             <h2>Контактна інформація</h2>
             <p><strong>Email:</strong> valentina@gmail.com</p>
             <p><strong>Телефон:</strong> +380 98 123 4567</p>
         </section>
     </div>
-     <div class="contact-form">
+     <div class="contact-form" id="">
             <h3><em>Повідомлення Валентині</em></h3>
     <form action="self.php">
 <p><input type="text"></p>
@@ -137,5 +174,3 @@
 <p><a href="#top">UP</a></p>
 </body>
 </html>
-
-

@@ -1,0 +1,42 @@
+ 
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #FFC0CB; /* Фон кольору #FFC0CB */
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        header img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+H1 {color: red;
+color: #800080; 
+    font-size: 300%; 
+    font-family: Caviat;
+    text-align: center;}
+    P {padding-left: 20px;}
+
+H2 {color: #FF1493;
+ font-size: 200%;
+font-family: Pacifico;
+text-align: center;}
+P {padding-left: 20px;}
+
+H3 {color: #2F4F4F;
+font-family: Calibri;
+font-size: 150%;
+text-align: left;
+}
